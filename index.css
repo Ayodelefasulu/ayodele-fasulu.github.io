@@ -163,3 +163,67 @@
   text-align: left;
   font-size: 18px;
 } */
+
+
+/* ========== Small Screens (Phones) ========== */
+@media screen and (max-width: 600px) {
+    /* Make navbar items stack */
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+    .company-card {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    
+    .audit-table {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    
+    .ba-button {
+        width: 100%;
+    }
+}
+
+/* ========== Medium Screens (Tablets) ========== */
+@media screen and (max-width: 1024px) {
+    .navbar-nav {
+        justify-content: center;
+    }
+
+    /* Reduce card margins */
+    .company-card {
+        margin: 10px 0;
+    }
+
+    /* Adjust table padding */
+    .audit-table td, .audit-table th {
+        padding: 8px;
+    }
+
+    /* Reduce footer text width */
+    .foot p {
+        width: 100%;
+    }
+}
+
+/* ========== Large Screens (Desktops) ========== */
+@media screen and (min-width: 1025px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
